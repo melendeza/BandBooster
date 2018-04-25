@@ -1,0 +1,34 @@
+public class BandBooster
+
+{
+    private String name;
+    private int boxesSold;
+    public BandBooster()
+    {
+        name = " ";
+        boxesSold = 0;
+    }
+    public BandBooster(String name1)
+    {
+        name = name1;
+        boxesSold = 0;
+    }
+    public BandBooster(String name1, int boxesSold1)
+    {
+        name = name1;
+        boxesSold = boxesSold1;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void updateSales (int add)
+    {
+        boxesSold += add;
+    }
+    public String toString () 
+    {
+        String toreturn = name + ": " + boxesSold + " boxes";
+        return toreturn;
+    }
+}
