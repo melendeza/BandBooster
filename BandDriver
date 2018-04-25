@@ -1,0 +1,42 @@
+import java.util.*;
+public class BandDriver
+{
+    public static void main (String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Name of Booster 1:");
+        String nameB1 = sc.next();
+        BandBooster b1 = new BandBooster(nameB1);
+        
+        System.out.print("Name of Booster 2:");
+        String nameB2 = sc.next();
+        BandBooster b2 = new BandBooster(nameB2);
+        
+        System.out.println("Week 1");
+        System.out.print("Enter the number of boxes sold by " + b1.getName() + " this week:");
+        int boxesb1w1 = sc.nextInt();
+        b1.updateSales(boxesb1w1);
+        System.out.print("Enter the number of boxes sold by " + b2.getName() + " this week:");
+        int boxesb2w1 = sc.nextInt();
+        b2.updateSales(boxesb2w1);
+        
+        System.out.println("Week 2");
+        System.out.print("Enter the number of boxes sold by " + b1.getName() + " this week:");
+        int boxesb1w2 = sc.nextInt();
+        b1.updateSales(boxesb1w2);
+        System.out.print("Enter the number of boxes sold by " + b2.getName() + " this week:");
+        int boxesb2w2 = sc.nextInt();
+        b2.updateSales(boxesb2w2);
+        
+        System.out.println("Week 3");
+        System.out.print("Enter the number of boxes sold by " + b1.getName() + " this week:");
+        int boxesb1w3 = sc.nextInt();
+        b1.updateSales(boxesb1w3);
+        System.out.print("Enter the number of boxes sold by " + b2.getName() + " this week:");
+        int boxesb2w3 = sc.nextInt();
+        b2.updateSales(boxesb2w3);
+        
+        System.out.println(b1.toString());
+        System.out.println(b2.toString());
+    }
+}
